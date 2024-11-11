@@ -1,0 +1,126 @@
+body{
+
+    background-image: url(imagenes/Portada.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    /*font-family: angelface;*/
+    font-family: Smile of the Ocean;
+}
+
+a{
+
+    text-decoration: none;
+}
+
+header{
+
+    display: flex;
+    min-height: 70px;
+    /*background-image: ;*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header h1{
+    box-shadow: 5px 5px 10px rgb(0, 0, 0,0.5);
+    border-radius: 10px;
+    font-size: 50px;
+}
+
+.menu{
+
+    position: relative;
+    display: inline-block;
+
+}
+
+.menu-content{
+    display: none;
+    position: absolute;
+    /*background-color: #f5cba7;*/
+    min-width: 45px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+    font-size: 25px;
+    
+   
+}
+
+.menu-content div:hover{
+
+    color: #d6eaf8;
+}
+
+.menu img{
+
+    height: 50px;
+    border-radius: 15px 15px;
+    margin-right: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.menu:hover .menu-content{
+    display: block;
+}
+
+.menu a:hover{
+    color: azure;
+}
+
+
+
+.titulo{
+
+    display: flex;
+    align-items: center;
+}
+
+.titulo nav{
+    margin: 5px;
+    
+}
+
+nav a:hover{
+    color: azure;
+}
+
+.contenido{
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 50px 50px;
+
+}
+
+.contenido table{
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+
+}
+.contenido img{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(0, 0, 0.5);
+}
+
+
+
+
+@media (max-width:700px){
+
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+
+}
